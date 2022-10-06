@@ -7,11 +7,7 @@ h1{
     text-align: center;
     color:  rgb(115, 7, 119);
 }
-table{
-    width: 100%;
-    height: 850px;
-   
-}
+
 a{
     color:  rgb(115, 7, 119);
     text-decoration: none;
@@ -25,12 +21,12 @@ div{
     width:100%;    
 }
 p{
-    padding-top: 150px;
+    padding-top: 15px;
 }
 button{
     background-color:  rgb(115, 7, 119);
     border: none;    
-    padding: 15px 32px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

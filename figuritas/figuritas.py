@@ -15,6 +15,7 @@ nfilas = int(args["nfilas"][0]) ##Variable global##
 figura = int(args["figura"][0])
 linea = ""
 
+##Figura 1
 #####Función cuadrado#####
 def cuadrado(nf):
     print("Cuadrado de ", args["nfilas"][0], "asteriscos")
@@ -32,6 +33,7 @@ def cuadrado(nf):
 
 print("----------------------------------------------------------")
 
+##Figura 2
 #####Función triangulo normal#####
 def trianguloN(nf):
     print("Triangulo normal de ", args["nfilas"][0], "asteriscos")
@@ -48,6 +50,7 @@ def trianguloN(nf):
 
 print("----------------------------------------------------------")
 
+##Figura 3
 #####Función triangulo con vuelta#####
 def trianguloV (nf):
     print("Triangulo normal con vuelta de ", args["nfilas"][0], "asteriscos")
@@ -64,6 +67,7 @@ def trianguloV (nf):
 
 print("----------------------------------------------------------")
 
+##Figura 4
 #####Función triangulo al reves#####
 def trianguloR (nf):
     print("Triangulo normal al reves de ", args["nfilas"][0], "asteriscos")
@@ -83,6 +87,7 @@ def trianguloR (nf):
 
 print("----------------------------------------------------------")
 
+##Figura 5
 #####Función triangulo al reves con vuelta#####
 def trianguloRV (nf):
     print("Triangulo normal al reves con vuelta de ", args["nfilas"][0], "asteriscos")
@@ -99,7 +104,6 @@ def trianguloRV (nf):
 
 #####Fin Función triangulo al reves con vuelta#####
 
-
 match figura:
     case 1:
         cuadrado(nfilas)
@@ -113,17 +117,3 @@ match figura:
         trianguloRV(nfilas)
     case _:
         print("opcion no contemplada")
-
-
-##if (figura==1):
-  ##  cuadrado(nfilas)
-##elif(figura==2):
-  ##  trianguloN(nfilas)
-##elif(figura==3):
-##    trianguloV(nfilas)
-##elif(figura==4):
-##    trianguloR(nfilas)
-##elif(figura==5):
-##    trianguloRV(nfilas)
-##else:
- ##   print("opcion no contemplada")
