@@ -31,13 +31,8 @@ print("Content-Type: text/html\n")
 
 
 if estaDentro:
-    print(codigoHTML.cabeceraHTML.format("CNI", "Entrada al CNI"))
-    print("<h6 class='Display-6'>Estas dentro</h6>")
-    print("<a href='secretosEstado.py'>Secretos del Estado</a><br>")
-    print("<a href='secretosEmerito.py'>Secretos del Emerito</a><br>")
+    print(codigoHTML.cabeceraHTML.format("Login", "Bienvenido"))
+    print("<h6 class='Display-6'>Estás dentro</h6>")
+    
     print(codigoHTML.finalHTML)
-else: 
-    print(codigoHTML.redireccionError())
-
-
 
