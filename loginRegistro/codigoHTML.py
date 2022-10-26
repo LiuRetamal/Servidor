@@ -48,11 +48,3 @@ redireccionHtml = """
 </body>
 </html>
 """
-
-redireccion = lambda s,t : print(redireccionHtml.format(s,t))
-
-def redireccionIndex():
-    redireccion(3,"index.html")
-
-def redireccionError():
-    redireccion(0,"error.html")
