@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de Registro</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+    <style>
+      body{
+        background-color: lightyellow;
+        font-family:'Courier New', Courier, monospace;
+        margin: 0;
+        padding: 0;
+        color:blueviolet;
+      }
+      h1{
+        font-size: 6rem;
+        margin: 0;
+        padding: 0; 
+        
+      }
+      a{
+        text-align: center;
+        text-decoration: none;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+      ul{
+        list-style: none;
+        text-align: center;
+      }
+      li{
+        font-size: 2rem;
+      }
+      .cabecera{
+        background-color:gold;
+        margin: 0;
+        padding: 2rem;
+      }
+    </style>        	
+    </head>    
+
+    <body>
+        <nav>
+            <div class="cabecera">
+              <div>
+                <a href="index.html"><h1>UWU</h1></a>
+              </div>
+              <ul>
+                <li><a href="registro.html"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+        </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+              <h3 class="text-center display-4">Registro</h3>
+              <hr>
+              <form action="registro.py" method="get">
+                  <div class="mb-3 mt-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Introduce el nombre" name="nombre">
+                  </div>
+                  <div class="mb-3">
+                    <label for="passwd" class="form-label">Contraseña:</label>
+                    <input type="text" class="form-control" id="passwd" placeholder="Introduce la contraseña" name="pass">
+                  </div>
+                  <div class="mb-3">
+                    <label for="correo" class="form-label">Email:</label>
+                    <input type="text" class="form-control" id="correo" placeholder="Introduce el correo" name="email">
+                  </div>
+                  <hr>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>                
+          </div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+
+      
+    </body>
+</html>
