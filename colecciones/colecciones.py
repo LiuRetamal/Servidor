@@ -17,6 +17,7 @@ print(len(lista))
 #nuevaList = [x for x in fruit if "a" in x]
 
 listaNumeros = [2,5,7,6,9,1,8,4,3,0]
+print(listaNumeros)
 
 listaMayores5 = [n for n in listaNumeros if n>5]
 listaMenores5 = [n*100 for n in listaNumeros if n<=5]
