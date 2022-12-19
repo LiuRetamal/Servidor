@@ -1,8 +1,0 @@
-Servidor: 
-    Escrita: generar HTML desde Python, recibir datos de formularios y 
-            trararlos (cadena de caracteres), trabajar con colecciones
-            3 o 4 ejercicios - 4pts.
-    No Escrita: cookies, ficheros y base de datos.
-            3 ejercicios -6pts.
-
-            

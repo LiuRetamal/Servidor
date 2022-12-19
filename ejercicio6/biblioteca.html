@@ -5,6 +5,22 @@
 	</head>
 	<body>
 		<hr />
+		Insertar venta:<br />
+		<form action="insertaVentaBD.py" method="get">
+			Dni: <input type="text" name="dni"/><br />
+			Número de adultos: <input type="text" name="adultos"/><br />
+			Número de menores: <input type="text" name="menores"/><br />
+			<input type="submit" value="Registrar venta" />
+		</form>
+		<hr />
+		Listado de ventas: <br />
+		<form action="listadoVentasBD.py" method="get">
+			<input type="submit" value="Listado ventas" />
+		</form>
+		<hr />
+
+
+		<!-- <hr />
 		Insertar préstamo:<br />
 		<form action="insertaBD.py" method="get">
 			Nombre del Socio: <input type="text" name="socio"/><br />
@@ -17,6 +33,6 @@
 		<form action="listadoBD.py" method="get">
 			<input type="submit" value="Listado prestamos" />
 		</form>
-		<hr />
+		<hr /> -->
 	</body>
 </html>

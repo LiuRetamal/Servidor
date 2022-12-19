@@ -1,7 +1,6 @@
 #!C:\Users\zx21student035\AppData\Local\Microsoft\WindowsApps\python
 
 import mysql.connector
-import json
 
 #conectar a base de datos
 mydb = mysql.connector.connect(
@@ -13,10 +12,25 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 #consultar en base de datos la lista de todos los camiones
-sql="SELECT titulo, autor FROM libros"
-
+sql="SELECT FROM socios"
 mycursor.execute(sql)
-lc = mycursor.fetchall()
+myresult = mycursor.fetchall()
+
+
 
 print("Content-Type: text/plain\n")
-print(json.dumps(lc))
+print('<html><head><meta charset="UTF-8"></head><body>')
+print('<h2>Listado de libros prestados</h2>')
+
+for socio in myresult:
+    ids=socio[0]
+    nombre=socio[1]
+
+    print('<hr>')
+    print('<h3>'+socio+'Ha recibido en prestamo/h3>')
+    sql='SELECT titulo FROM libros where id_socio='+str(ids)
+    mycursor.execute(sql)
+    myresultLibros = mycursor.fetchall()
+
+    for libro in myresultLibros:
+        print('<p>'+libro[0]+'</p>')

@@ -1,0 +1,41 @@
+TIMESTAMP de registro:
+    objeto Date
+    con este objeto insertamos la fecha
+        y hora en BD
+
+TIMESTAMP de resto operacines:
+    insert usamos now() de mysql
+
+INSERT INTO ROLES(descripcion) values("admin");
+INSERT INTO ROLES(descripcion) values("normal");
+
+INSERT INTO USUARIOS(usuario, passwd, mail,rolId,tmpRegistro)
+ VALUES ('admin','c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec'
+,'pepe@correo.net',1,now())
+
+==========================================
+
+Registrar todos los accesos del usuario a los diferentes .py
+
+tabla regOperaciones
+    id (auto_incrementado)
+    id_usuario (FK)
+    operacion (.py)
+    parametros (varchar)
+    timestamp (datetime)
+
+XXX, 2, "creaComentario.py", "", "2022-11-23 09:13:00"
+YYY, 2, "insertaComentario.py", "titulo=askdjfh comentario=una libro precioso imagen=portada.jpg"
+
+modulo ---> registroTiempos.py
+
+def regTmp(.......):
+    #conectarse a base de datos
+    #insertar en la base de datos la información de la operacion
+
+
+login.py:
+
+import registroTiempos
+
+regTmp(.......)
